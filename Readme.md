@@ -1,4 +1,6 @@
-# Functinal Programming
+# This repository contains my learning progress on Redux.
+
+## 1. Functinal Programming
 
 It is a programming paradigm which is used to built software applications and solve real-world problems.
 Some other programming paradigms are,
@@ -98,3 +100,26 @@ Some libraries which are used to working with immutables are,
 - Immutable
 - Immer
 - Mori
+
+## 2.Redux Fundamentals
+
+Three building blocks of redux are,
+
+- Store: single representation of the object that maintains the state.
+- Reducer: Event Handler.
+- action(Event): pure javascript object defines what just happend.
+
+### Redux architecture
+
+![](Assets/redux-architecture.png)
+
+- When the state of an object changes, the action creates an action object and ```dispatch``` it to the store.
+- Then the store forward the action object towards the reducer and the reducer updates the state.
+- After that, the store internally updates the new state.
+- Finally refresh the UI components.
+
+### Steps to Create Redux app
+- Design the store
+- Define the actions
+- Create the reducers
+- Set up the store
